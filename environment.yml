@@ -1,0 +1,13 @@
+name: isa
+channels:
+  - defaults
+dependencies:
+  - python=3.7.3
+  - numpy=1.16.4
+  - pandas=0.24.2
+  - pip=19.1.1
+  - spyder=3.3.6
+  - plotly=4.4.1
+  - pip:
+    - python-dotenv==0.10.3
+    - matplotlib==3.1.2

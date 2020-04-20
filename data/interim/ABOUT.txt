@@ -1,0 +1,6 @@
+sample-batch-icgm-condition-stats.csv -- Contains the results from batch-icgm-condition-stats.py, which includes the condition locations. Used by snapshot_processor.py
+
+sample-sensor-properties.csv -- A row of sensor properties used for testing pyloopkit_risk_simulator.py
+
+sample-snapshot-export/ -- A folder containing the results from snapshot_processor.py. Each .csv is a formatted scenario to be fed into the risk simulation pipeline. Used by risk-simulation-pipeline.py + pyloopkit_risk_simulator.py
+
