@@ -3,7 +3,7 @@
 """
 Snapshot Processor
 ==================
-:File: snapshot_processor.py
+:File: snapshot-processor.py
 :Description: Converts a Tidepool data snapshot into a set of dataframes that
               can be used by a risk simulator.
 :Version: 0.0.1
