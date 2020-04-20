@@ -28,11 +28,27 @@ The purpose of this project is to assess how the Tidepool Loop Algorithm is affe
 
 ## Getting Started
 
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](./src/raw) within this repo.
+Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
 
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
+**Setup Virtual Environment** 
+
+The iCGM Sensitivity Analysis is run within an anaconda virtual environment. [Anaconda](https://www.anaconda.com/distribution/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) can be used to install the `conda` command line tool.
+
+1. In a teriminal, navigate to this repository's root folder where the `environmental.yml` file is located.
+2. Run `conda env create`. This will download all of the pipeline's package dependencies and install them in a virtual environment named **isa** (**i**CGM **s**ensitivity **a**nalysis)
+3. Run `conda activate isa` to activate the environment and `conda deactivate` at anytime to exit.
+
+**Pipeline Execution**
+
+The entire processing pipeline and risk simulator are run from the src directory in order:
+
+```
+python batch-icgm-condition-stats.py
+python snapshot-processor.py
+python risk-simulation-pipeline.py
+```
+
+Sample data necessary to run all parts of the simulationis has been added [here](./src) within this repo.
 
 ## Featured Notebooks/Analysis/Deliverables
 * [Notebook/Markdown/Slide Deck Title](link)
