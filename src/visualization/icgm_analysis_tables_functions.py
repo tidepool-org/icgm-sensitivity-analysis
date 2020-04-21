@@ -165,8 +165,8 @@ def get_table_12(table_8):
     analysis_level = ['b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'b9']
     selected_rows = table_8['Level of Analysis'].isin(analysis_level)
     table_12 = table_8.loc[selected_rows]
-    table_12.rename(
-            columns={'Level of Analysis': 'Level of Analysis (True BG)'}
+    table_12 = table_12.rename(
+            columns={'Level of Analysis': 'Level of Analysis \n(True BG)'}
     )
 
     return table_12
@@ -174,6 +174,8 @@ def get_table_12(table_8):
 
 def get_table_13():
     """Table 13. Example Summary Table at the iCGM Test Condition Level"""
+
+    table_13 = pd.DataFrame()
 
     return table_13
 
