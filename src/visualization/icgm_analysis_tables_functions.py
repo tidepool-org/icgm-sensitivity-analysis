@@ -94,21 +94,41 @@ def get_table_8():
                                     'correctionBolus (a2)',
                                     'mealBolus (a3)',
                                     'b1', 'b2', 'b3',
-                                    'b4', 'b5', 'b6'
+                                    'b4', 'b5', 'b6',
                                     'b7', 'b8', 'b9'
     ]
 
     return table_8
 
 
-def get_table_9():
-    """Table 9. Example Summary Table at the All-Analysis-Combined Level"""
+def get_table_9(table_8):
+    """Table 9. Example Summary Table at the All-Analysis-Combined Level
+
+    This is just a subset of table 8
+    """
+
+    analysis_level = ['All Analyses Combined']
+
+    selected_rows = table_8['Level of Analysis'].isin(analysis_level)
+    table_9 = table_8.loc[selected_rows]
 
     return table_9
 
 
-def get_table_10():
-    """Table 10. Example Summary Table at the Analysis-Level"""
+def get_table_10(table_8):
+    """Table 10. Example Summary Table at the Analysis-Level
+
+    This is just a subset of table 8
+    """
+
+    analysis_level = [
+            'tempBasal (a1)',
+            'correctionBolus (a2)',
+            'mealBolus (a3)'
+    ]
+
+    selected_rows = table_8['Level of Analysis'].isin(analysis_level)
+    table_10 = table_8.loc[selected_rows]
 
     return table_10
 
@@ -136,8 +156,18 @@ def get_table_11():
     return table_11
 
 
-def get_table_12():
-    """Table 12. Example Summary Table at the True BG Test Condition Level"""
+def get_table_12(table_8):
+    """Table 12. Example Summary Table at the True BG Test Condition Level
+
+    This is just a subset of table 8
+    """
+
+    analysis_level = ['b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'b9']
+    selected_rows = table_8['Level of Analysis'].isin(analysis_level)
+    table_12 = table_8.loc[selected_rows]
+    table_12.rename(
+            columns={'Level of Analysis': 'Level of Analysis (True BG)'}
+    )
 
     return table_12
 
