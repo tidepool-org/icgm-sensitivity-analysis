@@ -4,6 +4,11 @@
 Created on Mon Nov 18 11:03:31 2019
 @author: ed nykaza, jason meno
 
+The Dexcom G6 Specifications in this file are publicly available from:
+    “EVALUATION OF AUTOMATIC CLASS III DESIGNATION FOR
+    Dexcom G6 Continuous Glucose Monitoring System.” n.d.
+    https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN170088.pdf.
+
 """
 
 # %% Libraries
