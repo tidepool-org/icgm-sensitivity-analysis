@@ -1,0 +1,5 @@
+anonymized-sample.csv -- contains about 30 days of anonymized diabetes device data (cgm, insulin, carbs, etc) that has been processed from the Tidepool API using the Tidepool Donor Data Pipeline. 
+
+metadata/sample-metadata.csv -- contains the demographic metadata for each file and is used to get the age and years living with diabetes throughout the rest of the simulation. This metadata is captured from the Tidepool API through the Donor Data Pipeline's get_single_donor_metadata.py script.
+
+See: https://github.com/tidepool-org/donor-data-pipeline/

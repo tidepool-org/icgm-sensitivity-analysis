@@ -1,0 +1,2 @@
+initial_bias,phi_drift,bias_drift_range_start,bias_drift_range_end,bias_drift_oscillations,bias_norm_factor,noise_coefficient,delay,random_seed
+2.867306440806238,1.8623167773338887,0.9687570409463783,0.9564225713255481,0.9187259443815252,55,2.292679676934042,10,0
